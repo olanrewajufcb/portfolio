@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'AirstreamRegular';
+  src: url('../fonts/Airstream/airstream.eot');
+  src: url('../fonts/Airstream/airstream.eot') format('embedded-opentype'),
+    url('../fonts/Airstream/airstream.woff') format('woff'),
+    url('../fonts/Airstream/airstream.ttf') format('truetype'),
+    url('../fonts/Airstream/airstream.svg#AirstreamRegular') format('svg');
+}
+
+:root,
+body {
+  --ff-primary: "David Libre", serif;
+  --ff-secondary: "Arima Madurai", cursive;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail-title {
+  background: rgb(96, 125, 139);
+  color: rgb(202, 238, 255);
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+/* .thumbnail-image {
+} */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.thumbnail-item {
+  display: inline-block;
+  min-width: 60px;
+  max-width: 80px;
+  max-height: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin: 10px;
+}
+
+.thumbnail-list {
+  flex: 0 1 auto;
+  order: 0;
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+@media(min-width: 570px) {
+  .thumbnail-list {
+    margin: 20px;
+    justify-content: space-between;
+  }
+
+  .thumbnail-item {
+    max-height: fit-content;
+  }
+
+  .big-image {
+    width: 90%;
+    margin: 0 auto;
+    height: 30em;
+  }
+}
+
+.big-image {
+  width: 90%;
+  margin: 0 auto;
+  /* max-height: 250px; */
+}
+
+.big-image-container {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.big-image-frame {
+  text-align: center;
+  position: relative;
+}
+
+.big-image-title {
+  /* color: #ccf381; */
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  bottom: -1px;
+  left: 17px;
+  font-family: 'AirstreamRegular', var(--ff-primary);
+}
+
+/* 
+@media (min-width: 400px) {
+  .big-image-title {
+    font-size: 40px;
+    position: absolute;
+    bottom: -3px;
+    left: 24px;
+  }
+}
+
+@media (min-width: 620px) {
+  .big-image-title {
+    font-size: 40px;
+    position: absolute;
+    bottom: -6px;
+    left: 32px;
+  }
+}
+
+@media (min-width: 800px) {
+  .big-image-title {
+    font-size: 40px;
+    position: absolute;
+    bottom: -8px;
+    left: 35px;
+  }
+} */
